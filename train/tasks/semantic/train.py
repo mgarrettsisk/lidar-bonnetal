@@ -37,7 +37,7 @@ if __name__ == '__main__':
       '--log', '-l',
       type=str,
       default=os.path.expanduser("~") + '/logs/' +
-      datetime.datetime.now().strftime("%Y-%-m-%d-%H:%M") + '/',
+      datetime.datetime.now().strftime("%Y-%m-%d-%H:%M") + '/',
       help='Directory to put the log data. Default: ~/logs/date+time'
   )
   parser.add_argument(

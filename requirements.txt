@@ -1,5 +1,5 @@
 # first apt install python3-tk
-numpy==1.14.0
+# numpy==1.14.0
 torchvision==0.2.2.post3
 matplotlib==2.2.3
 tensorflow==1.13.1

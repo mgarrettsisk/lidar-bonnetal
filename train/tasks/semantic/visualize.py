@@ -3,7 +3,7 @@
 
 import argparse
 import os
-import yaml
+from yaml import safe_load
 import __init__ as booger
 
 from common.laserscan import LaserScan, SemLaserScan
@@ -83,7 +83,7 @@ if __name__ == '__main__':
   # open config file
   try:
     print("Opening config file %s" % FLAGS.config)
-    CFG = yaml.safe_load(open(FLAGS.config, 'r'))
+    CFG = safe_load(open(FLAGS.config, 'r'))
   except Exception as e:
     print(e)
     print("Error opening yaml file.")
